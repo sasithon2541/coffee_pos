@@ -16,5 +16,10 @@ namespace coffee_pos_6034101561
         {
             InitializeComponent();
         }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

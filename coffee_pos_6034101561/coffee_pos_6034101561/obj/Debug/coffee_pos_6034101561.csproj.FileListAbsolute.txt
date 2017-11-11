@@ -1,0 +1,10 @@
+C:\Users\User\Documents\GitHub\coffee_pos\coffee_pos_6034101561\coffee_pos_6034101561\bin\Debug\coffee_pos_6034101561.exe.config
+C:\Users\User\Documents\GitHub\coffee_pos\coffee_pos_6034101561\coffee_pos_6034101561\bin\Debug\coffee_pos_6034101561.exe
+C:\Users\User\Documents\GitHub\coffee_pos\coffee_pos_6034101561\coffee_pos_6034101561\bin\Debug\coffee_pos_6034101561.pdb
+C:\Users\User\Documents\GitHub\coffee_pos\coffee_pos_6034101561\coffee_pos_6034101561\obj\Debug\coffee_pos_6034101561.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\GitHub\coffee_pos\coffee_pos_6034101561\coffee_pos_6034101561\obj\Debug\coffee_pos_6034101561.Form1.resources
+C:\Users\User\Documents\GitHub\coffee_pos\coffee_pos_6034101561\coffee_pos_6034101561\obj\Debug\coffee_pos_6034101561.Properties.Resources.resources
+C:\Users\User\Documents\GitHub\coffee_pos\coffee_pos_6034101561\coffee_pos_6034101561\obj\Debug\coffee_pos_6034101561.csproj.GenerateResource.Cache
+C:\Users\User\Documents\GitHub\coffee_pos\coffee_pos_6034101561\coffee_pos_6034101561\obj\Debug\coffee_pos_6034101561.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\coffee_pos\coffee_pos_6034101561\coffee_pos_6034101561\obj\Debug\coffee_pos_6034101561.exe
+C:\Users\User\Documents\GitHub\coffee_pos\coffee_pos_6034101561\coffee_pos_6034101561\obj\Debug\coffee_pos_6034101561.pdb
