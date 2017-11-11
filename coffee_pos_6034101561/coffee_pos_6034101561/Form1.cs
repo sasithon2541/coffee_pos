@@ -12,6 +12,7 @@ namespace coffee_pos_6034101561
 {
     public partial class Form1 : Form
     {
+        string k_s = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace coffee_pos_6034101561
             string[] k = { menu, bath };
             var list = new ListViewItem(k);
             listView1.Items.Add(list);
+            mi();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -237,6 +239,79 @@ namespace coffee_pos_6034101561
         private void button40_Click(object sender, EventArgs e)
         {
             kung("Honey lime Soda", "25");
+        }
+
+
+        double price;
+        public string[] mi()
+        {
+            price = 0;
+            string[] Ar = new string[listView1.Items.Count];
+            int item = listView1.Items.Count;
+            for(int i = 0; i < item ; i++)
+            {
+                price += double.Parse(listView1.Items[i].SubItems[1].Text);
+                Ar[i] = listView1.Items[i].SubItems[0].Text.ToString();
+            }
+            label26.Text = price.ToString();
+            return Ar;
+        }
+
+        public string[] mil()
+        {
+            string[] Ar = new string[listView1.Items.Count];
+            int item = listView1.Items.Count;
+            for (int i = 0; i < item; i++)
+            {
+                Ar[i] = listView1.Items[i].SubItems[1].Text.ToString();
+            }
+            return Ar;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            tabControl1.Controls.Remove(Payment);
+        }
+
+        public void fa()
+        {
+            string[] ku = mi();
+            string[] ng = mil();
+            string pim = "kung_coffee" + DateTime.Now.ToString("hhmmss_dd_mm_yyyy");
+            string bill = "kung_coffee";
+            bill += "\r\n" + DateTime.Now.ToString("hh:mm:ss") + "\r\n" + DateTime.Now.ToString("dd/mm/yyyy") + "\r\n" + "\r\n";
+            bill += "Menu" + "\r\n";
+            for (int i = 0; i < listView1.Items.Count;i++)
+            {
+                bill += ku[i] + new String(' ', 20) + ng[i] +  "Bath" + "\r\n";
+            }
+            bill += "\r\n";
+            bill += "Total Price : " + label26.Text;
+            System.IO.File.WriteAllText(k_s + @"\" + pim + ".txt", bill);
+            lb1.Text += bill + "\r\n" + "\r\n" + "\r\n" + "\r\n" + "Save File at" + k_s + @"\" + pim + ".txt";
+        }
+
+        bool ok=false;
+        private void button43_Click(object sender, EventArgs e)
+        {
+            if (ok == false)
+            {
+                tabControl1.TabPages.Insert(1, Payment);
+                ok = true;
+                tabControl1.SelectedTab = Payment;
+            }
+            else tabControl1.SelectedTab = Payment;
+
+            if (listView1.Items.Count > 0)
+                fa();
+        }
+
+        private void button42_Click(object sender, EventArgs e)
+        {
+            listView1.Items.Clear();
+            ok = false;
+            tabControl1.Controls.Remove(Payment);
+            label26.Text = "";
         }
     }
 }

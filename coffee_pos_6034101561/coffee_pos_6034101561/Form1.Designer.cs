@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label5 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -104,8 +105,14 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.button42 = new System.Windows.Forms.Button();
+            this.Payment = new System.Windows.Forms.TabPage();
+            this.lb1 = new System.Windows.Forms.Label();
+            this.button43 = new System.Windows.Forms.Button();
+            this.label28 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.Payment.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -114,13 +121,14 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label5.Location = new System.Drawing.Point(540, 25);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(169, 33);
+            this.label5.Size = new System.Drawing.Size(158, 33);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Coffee POS";
+            this.label5.Text = "Coffee Pos";
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.Payment);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(25, 61);
             this.tabControl1.Name = "tabControl1";
@@ -205,6 +213,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label28);
             this.tabPage2.Location = new System.Drawing.Point(4, 27);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -872,7 +881,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(1038, 508);
+            this.label25.Location = new System.Drawing.Point(1040, 485);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(42, 18);
             this.label25.TabIndex = 10;
@@ -883,9 +892,9 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.listView1.Location = new System.Drawing.Point(978, 88);
+            this.listView1.Location = new System.Drawing.Point(975, 88);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(303, 400);
+            this.listView1.Size = new System.Drawing.Size(303, 384);
             this.listView1.TabIndex = 11;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -893,15 +902,17 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Menu ";
+            this.columnHeader1.Width = 175;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Price";
+            this.columnHeader2.Width = 109;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(1130, 508);
+            this.label26.Location = new System.Drawing.Point(1124, 485);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(16, 18);
             this.label26.TabIndex = 12;
@@ -911,7 +922,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(1192, 508);
+            this.label27.Location = new System.Drawing.Point(1194, 485);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(38, 18);
             this.label27.TabIndex = 13;
@@ -920,18 +931,60 @@
             // button42
             // 
             this.button42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button42.Location = new System.Drawing.Point(1195, 39);
+            this.button42.Location = new System.Drawing.Point(1146, 515);
             this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(76, 43);
+            this.button42.Size = new System.Drawing.Size(72, 30);
             this.button42.TabIndex = 14;
             this.button42.Text = "Clear";
             this.button42.UseVisualStyleBackColor = true;
+            this.button42.Click += new System.EventHandler(this.button42_Click);
+            // 
+            // Payment
+            // 
+            this.Payment.Controls.Add(this.lb1);
+            this.Payment.Location = new System.Drawing.Point(4, 27);
+            this.Payment.Name = "Payment";
+            this.Payment.Size = new System.Drawing.Size(922, 453);
+            this.Payment.TabIndex = 2;
+            this.Payment.Text = "Payment";
+            this.Payment.UseVisualStyleBackColor = true;
+            // 
+            // lb1
+            // 
+            this.lb1.AutoSize = true;
+            this.lb1.Location = new System.Drawing.Point(48, 42);
+            this.lb1.Name = "lb1";
+            this.lb1.Size = new System.Drawing.Size(0, 18);
+            this.lb1.TabIndex = 0;
+            // 
+            // button43
+            // 
+            this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button43.Location = new System.Drawing.Point(1042, 515);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(72, 30);
+            this.button43.TabIndex = 15;
+            this.button43.Text = "Payment";
+            this.button43.UseVisualStyleBackColor = true;
+            this.button43.Click += new System.EventHandler(this.button43_Click);
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(27, 45);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(353, 54);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Author : Sasithon Pimmatha\r\n\r\nGitHub : https://github.com/sasithon2541/coffee_pos" +
+    "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1306, 564);
+            this.Controls.Add(this.button43);
             this.Controls.Add(this.button42);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label26);
@@ -943,9 +996,14 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.Payment.ResumeLayout(false);
+            this.Payment.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1028,6 +1086,10 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.TabPage Payment;
+        private System.Windows.Forms.Label lb1;
+        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Label label28;
     }
 }
 
