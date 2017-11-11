@@ -32,7 +32,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button40 = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.button44 = new System.Windows.Forms.Button();
@@ -98,6 +97,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Payment = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label28 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -105,14 +107,12 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.button42 = new System.Windows.Forms.Button();
-            this.Payment = new System.Windows.Forms.TabPage();
-            this.lb1 = new System.Windows.Forms.Label();
             this.button43 = new System.Windows.Forms.Button();
-            this.label28 = new System.Windows.Forms.Label();
+            this.lb1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.Payment.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
@@ -210,17 +210,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Menu";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.label28);
-            this.tabPage2.Location = new System.Drawing.Point(4, 27);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(922, 453);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "About";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button40
             // 
@@ -878,6 +867,37 @@
             this.label1.TabIndex = 96;
             this.label1.Text = "Hot";
             // 
+            // Payment
+            // 
+            this.Payment.Controls.Add(this.lb1);
+            this.Payment.Location = new System.Drawing.Point(4, 27);
+            this.Payment.Name = "Payment";
+            this.Payment.Size = new System.Drawing.Size(922, 453);
+            this.Payment.TabIndex = 2;
+            this.Payment.Text = "Payment";
+            this.Payment.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label28);
+            this.tabPage2.Location = new System.Drawing.Point(4, 27);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(922, 453);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "About";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(27, 45);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(353, 54);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Author : Sasithon Pimmatha\r\n\r\nGitHub : https://github.com/sasithon2541/coffee_pos" +
+    "";
+            // 
             // label25
             // 
             this.label25.AutoSize = true;
@@ -939,24 +959,6 @@
             this.button42.UseVisualStyleBackColor = true;
             this.button42.Click += new System.EventHandler(this.button42_Click);
             // 
-            // Payment
-            // 
-            this.Payment.Controls.Add(this.lb1);
-            this.Payment.Location = new System.Drawing.Point(4, 27);
-            this.Payment.Name = "Payment";
-            this.Payment.Size = new System.Drawing.Size(922, 453);
-            this.Payment.TabIndex = 2;
-            this.Payment.Text = "Payment";
-            this.Payment.UseVisualStyleBackColor = true;
-            // 
-            // lb1
-            // 
-            this.lb1.AutoSize = true;
-            this.lb1.Location = new System.Drawing.Point(48, 42);
-            this.lb1.Name = "lb1";
-            this.lb1.Size = new System.Drawing.Size(0, 18);
-            this.lb1.TabIndex = 0;
-            // 
             // button43
             // 
             this.button43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
@@ -968,15 +970,15 @@
             this.button43.UseVisualStyleBackColor = true;
             this.button43.Click += new System.EventHandler(this.button43_Click);
             // 
-            // label28
+            // lb1
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(27, 45);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(353, 54);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "Author : Sasithon Pimmatha\r\n\r\nGitHub : https://github.com/sasithon2541/coffee_pos" +
-    "";
+            this.lb1.Location = new System.Drawing.Point(24, 22);
+            this.lb1.Multiline = true;
+            this.lb1.Name = "lb1";
+            this.lb1.ReadOnly = true;
+            this.lb1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.lb1.Size = new System.Drawing.Size(878, 410);
+            this.lb1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -1000,10 +1002,10 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.Payment.ResumeLayout(false);
             this.Payment.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1087,9 +1089,9 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button button42;
         private System.Windows.Forms.TabPage Payment;
-        private System.Windows.Forms.Label lb1;
         private System.Windows.Forms.Button button43;
         private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox lb1;
     }
 }
 

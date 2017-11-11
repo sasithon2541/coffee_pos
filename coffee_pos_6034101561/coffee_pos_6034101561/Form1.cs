@@ -277,8 +277,8 @@ namespace coffee_pos_6034101561
         {
             string[] ku = mi();
             string[] ng = mil();
-            string pim = "kung_coffee" + DateTime.Now.ToString("hhmmss_dd_mm_yyyy");
-            string bill = "kung_coffee";
+            string pim = "Coffee_Pos" + DateTime.Now.ToString("hhmmss_dd_mm_yyyy");
+            string bill = "Coffee_Pos";
             bill += "\r\n" + DateTime.Now.ToString("hh:mm:ss") + "\r\n" + DateTime.Now.ToString("dd/mm/yyyy") + "\r\n" + "\r\n";
             bill += "Menu" + "\r\n";
             for (int i = 0; i < listView1.Items.Count;i++)
@@ -294,6 +294,7 @@ namespace coffee_pos_6034101561
         bool ok=false;
         private void button43_Click(object sender, EventArgs e)
         {
+            lb1.Text = "";
             if (ok == false)
             {
                 tabControl1.TabPages.Insert(1, Payment);
@@ -312,6 +313,7 @@ namespace coffee_pos_6034101561
             ok = false;
             tabControl1.Controls.Remove(Payment);
             label26.Text = "";
+            lb1.Text = "";
         }
     }
 }
